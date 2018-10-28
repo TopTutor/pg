@@ -5,7 +5,7 @@ import (
 	"strconv"
 
 	"github.com/rustjason/pg/internal"
-	"github.com/go-pg/pg/orm"
+	"github.com/rustjason/pg/pg/orm"
 )
 
 // A result summarizes an executed SQL command.

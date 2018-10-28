@@ -4,7 +4,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/go-pg/pg/types"
+	"github.com/rustjason/pg/pg/types"
 )
 
 // URLFilter is used with Query.Apply to add WHERE clauses from the URL values:

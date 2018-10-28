@@ -9,7 +9,7 @@ import (
 
 	"github.com/rustjason/pg/internal"
 	"github.com/rustjason/pg/internal/parser"
-	"github.com/go-pg/pg/types"
+	"github.com/rustjason/pg/pg/types"
 )
 
 var formatter Formatter

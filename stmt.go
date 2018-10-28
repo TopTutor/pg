@@ -7,7 +7,7 @@ import (
 
 	"github.com/rustjason/pg/internal"
 	"github.com/rustjason/pg/internal/pool"
-	"github.com/go-pg/pg/orm"
+	"github.com/rustjason/pg/pg/orm"
 )
 
 var errStmtClosed = errors.New("pg: statement is closed")

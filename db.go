@@ -8,7 +8,7 @@ import (
 
 	"github.com/rustjason/pg/internal"
 	"github.com/rustjason/pg/internal/pool"
-	"github.com/go-pg/pg/orm"
+	"github.com/rustjason/pg/pg/orm"
 )
 
 // Connect connects to a database using provided options.

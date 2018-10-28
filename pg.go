@@ -6,8 +6,8 @@ import (
 	"strconv"
 
 	"github.com/rustjason/pg/internal"
-	"github.com/go-pg/pg/orm"
-	"github.com/go-pg/pg/types"
+	"github.com/rustjason/pg/pg/orm"
+	"github.com/rustjason/pg/pg/types"
 )
 
 // Discard is used with Query and QueryOne to discard rows.

@@ -7,7 +7,7 @@ import (
 
 	"github.com/rustjason/pg/internal"
 	"github.com/rustjason/pg/internal/pool"
-	"github.com/go-pg/pg/types"
+	"github.com/rustjason/pg/pg/types"
 )
 
 const gopgChannel = "gopg:ping"

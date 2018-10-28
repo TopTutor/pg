@@ -6,7 +6,7 @@ import (
 	"reflect"
 
 	"github.com/rustjason/pg/internal"
-	"github.com/go-pg/pg/types"
+	"github.com/rustjason/pg/pg/types"
 )
 
 func Update(db DB, model interface{}) error {

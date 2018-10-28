@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-pg/pg"
+	"github.com/rustjason/pg/pg"
 
 	. "github.com/onsi/ginkgo"
 	. "gopkg.in/check.v1"

@@ -10,7 +10,7 @@ import (
 	"time"
 
 	"github.com/rustjason/pg/internal"
-	"github.com/go-pg/pg/types"
+	"github.com/rustjason/pg/pg/types"
 )
 
 type withQuery struct {

@@ -9,7 +9,7 @@ import (
 
 	"github.com/rustjason/pg/internal"
 	"github.com/rustjason/pg/internal/pool"
-	"github.com/go-pg/pg/orm"
+	"github.com/rustjason/pg/pg/orm"
 )
 
 var errTxDone = errors.New("pg: transaction has already been committed or rolled back")
