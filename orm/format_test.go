@@ -7,8 +7,8 @@ import (
 	"math"
 	"testing"
 
-	"github.com/rustjason/pg/pg/orm"
-	"github.com/rustjason/pg/pg/types"
+	"github.com/rustjason/pg/orm"
+	"github.com/rustjason/pg/types"
 )
 
 type ValuerError string

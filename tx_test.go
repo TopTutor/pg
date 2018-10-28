@@ -3,7 +3,7 @@ package pg_test
 import (
 	"strings"
 
-	"github.com/rustjason/pg/pg"
+	"github.com/rustjason/pg"
 
 	. "gopkg.in/check.v1"
 )

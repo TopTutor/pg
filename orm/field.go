@@ -3,7 +3,7 @@ package orm
 import (
 	"reflect"
 
-	"github.com/rustjason/pg/pg/types"
+	"github.com/rustjason/pg/types"
 )
 
 const (

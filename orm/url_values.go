@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/rustjason/pg/pg/types"
+	"github.com/rustjason/pg/types"
 )
 
 type URLValues map[string][]string

@@ -4,7 +4,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/rustjason/pg/pg"
+	"github.com/rustjason/pg"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

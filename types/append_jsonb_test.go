@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/rustjason/pg/pg/types"
+	"github.com/rustjason/pg/types"
 )
 
 var jsonbTests = []struct {

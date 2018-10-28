@@ -11,9 +11,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/rustjason/pg/pg"
-	"github.com/rustjason/pg/pg/orm"
-	"github.com/rustjason/pg/pg/types"
+	"github.com/rustjason/pg"
+	"github.com/rustjason/pg/orm"
+	"github.com/rustjason/pg/types"
 )
 
 type JSONMap map[string]interface{}

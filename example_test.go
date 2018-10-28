@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/rustjason/pg/pg"
-	"github.com/rustjason/pg/pg/orm"
+	"github.com/rustjason/pg"
+	"github.com/rustjason/pg/orm"
 )
 
 var pgdb *pg.DB

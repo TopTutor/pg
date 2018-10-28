@@ -1,7 +1,7 @@
 package orm
 
 import (
-	"github.com/rustjason/pg/pg/types"
+	"github.com/rustjason/pg/types"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

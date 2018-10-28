@@ -3,7 +3,7 @@ package pg_test
 import (
 	"fmt"
 
-	"github.com/rustjason/pg/pg"
+	"github.com/rustjason/pg"
 )
 
 type Params struct {

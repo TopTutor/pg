@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/rustjason/pg/pg"
-	"github.com/rustjason/pg/pg/orm"
+	"github.com/rustjason/pg"
+	"github.com/rustjason/pg/orm"
 )
 
 func modelDB() *pg.DB {

@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/rustjason/pg/pg/types"
+	"github.com/rustjason/pg/types"
 )
 
 func TestParseTimeString(t *testing.T) {

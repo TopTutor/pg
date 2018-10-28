@@ -3,7 +3,7 @@ package types_test
 import (
 	"testing"
 
-	"github.com/rustjason/pg/pg/types"
+	"github.com/rustjason/pg/types"
 )
 
 func TestInOp(t *testing.T) {

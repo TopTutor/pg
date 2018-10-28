@@ -5,7 +5,7 @@ import (
 	"reflect"
 
 	"github.com/rustjason/pg/internal/parser"
-	"github.com/rustjason/pg/pg/types"
+	"github.com/rustjason/pg/types"
 )
 
 func compositeScanner(typ reflect.Type) types.ScannerFunc {

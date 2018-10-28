@@ -1,37 +1,37 @@
 # PostgreSQL client and ORM for Golang
 
 [![Build Status](https://travis-ci.org/go-pg/pg.svg?branch=master)](https://travis-ci.org/go-pg/pg)
-[![GoDoc](https://godoc.org/github.com/rustjason/pg/pg?status.svg)](https://godoc.org/github.com/rustjason/pg/pg)
+[![GoDoc](https://godoc.org/github.com/rustjason/pg?status.svg)](https://godoc.org/github.com/rustjason/pg)
 
 ## Features:
 
 - Basic types: integers, floats, string, bool, time.Time, net.IP, net.IPNet.
-- sql.NullBool, sql.NullString, sql.NullInt64, sql.NullFloat64 and [pg.NullTime](http://godoc.org/github.com/rustjason/pg/pg#NullTime).
+- sql.NullBool, sql.NullString, sql.NullInt64, sql.NullFloat64 and [pg.NullTime](http://godoc.org/github.com/rustjason/pg#NullTime).
 - [sql.Scanner](http://golang.org/pkg/database/sql/#Scanner) and [sql/driver.Valuer](http://golang.org/pkg/database/sql/driver/#Valuer) interfaces.
 - Structs, maps and arrays are marshalled as JSON by default.
-- PostgreSQL multidimensional Arrays using [array tag](https://godoc.org/github.com/rustjason/pg/pg#example-DB-Model-PostgresArrayStructTag) and [Array wrapper](https://godoc.org/github.com/rustjason/pg/pg#example-Array).
-- Hstore using [hstore tag](https://godoc.org/github.com/rustjason/pg/pg#example-DB-Model-HstoreStructTag) and [Hstore wrapper](https://godoc.org/github.com/rustjason/pg/pg#example-Hstore).
-- [Composite types](https://godoc.org/github.com/rustjason/pg/pg#example-DB-Model-CompositeType).
+- PostgreSQL multidimensional Arrays using [array tag](https://godoc.org/github.com/rustjason/pg#example-DB-Model-PostgresArrayStructTag) and [Array wrapper](https://godoc.org/github.com/rustjason/pg#example-Array).
+- Hstore using [hstore tag](https://godoc.org/github.com/rustjason/pg#example-DB-Model-HstoreStructTag) and [Hstore wrapper](https://godoc.org/github.com/rustjason/pg#example-Hstore).
+- [Composite types](https://godoc.org/github.com/rustjason/pg#example-DB-Model-CompositeType).
 - All struct fields are nullable by default and zero values (empty string, 0, zero time, empty map or slice) are marshalled as SQL `NULL`. `sql:",notnull"` tag is used to reverse this behaviour.
-- [Transactions](http://godoc.org/github.com/rustjason/pg/pg#example-DB-Begin).
-- [Prepared statements](http://godoc.org/github.com/rustjason/pg/pg#example-DB-Prepare).
-- [Notifications](http://godoc.org/github.com/rustjason/pg/pg#example-Listener) using `LISTEN` and `NOTIFY`.
-- [Copying data](http://godoc.org/github.com/rustjason/pg/pg#example-DB-CopyFrom) using `COPY FROM` and `COPY TO`.
-- [Timeouts](http://godoc.org/github.com/rustjason/pg/pg#Options).
+- [Transactions](http://godoc.org/github.com/rustjason/pg#example-DB-Begin).
+- [Prepared statements](http://godoc.org/github.com/rustjason/pg#example-DB-Prepare).
+- [Notifications](http://godoc.org/github.com/rustjason/pg#example-Listener) using `LISTEN` and `NOTIFY`.
+- [Copying data](http://godoc.org/github.com/rustjason/pg#example-DB-CopyFrom) using `COPY FROM` and `COPY TO`.
+- [Timeouts](http://godoc.org/github.com/rustjason/pg#Options).
 - Automatic connection pooling with [circuit breaker](https://en.wikipedia.org/wiki/Circuit_breaker_design_pattern) support.
 - Queries retries on network errors.
-- Working with models using [ORM](https://godoc.org/github.com/rustjason/pg/pg#example-DB-Model) and [SQL](https://godoc.org/github.com/rustjason/pg/pg#example-DB-Query).
-- Scanning variables using [ORM](https://godoc.org/github.com/rustjason/pg/pg#example-DB-Select-SomeColumnsIntoVars) and [SQL](https://godoc.org/github.com/rustjason/pg/pg#example-Scan).
-- [SelectOrInsert](https://godoc.org/github.com/rustjason/pg/pg#example-DB-Insert-SelectOrInsert) using on-conflict.
-- [INSERT ... ON CONFLICT DO UPDATE](https://godoc.org/github.com/rustjason/pg/pg#example-DB-Insert-OnConflictDoUpdate) using ORM.
-- Bulk/batch [inserts](https://godoc.org/github.com/rustjason/pg/pg#example-DB-Insert-BulkInsert), [updates](https://godoc.org/github.com/rustjason/pg/pg#example-DB-Update-BulkUpdate), and [deletes](https://godoc.org/github.com/rustjason/pg/pg#example-DB-Delete-BulkDelete).
-- Common table expressions using [WITH](https://godoc.org/github.com/rustjason/pg/pg#example-DB-Select-With) and [WrapWith](https://godoc.org/github.com/rustjason/pg/pg#example-DB-Select-WrapWith).
-- [CountEstimate](https://godoc.org/github.com/rustjason/pg/pg#example-DB-Model-CountEstimate) using `EXPLAIN` to get [estimated number of matching rows](https://wiki.postgresql.org/wiki/Count_estimate).
-- ORM supports [has one](https://godoc.org/github.com/rustjason/pg/pg#example-DB-Model-HasOne), [belongs to](https://godoc.org/github.com/rustjason/pg/pg#example-DB-Model-BelongsTo), [has many](https://godoc.org/github.com/rustjason/pg/pg#example-DB-Model-HasMany), and [many to many](https://godoc.org/github.com/rustjason/pg/pg#example-DB-Model-ManyToMany) with composite/multi-column primary keys.
-- [Soft deletes](https://godoc.org/github.com/rustjason/pg/pg#example-DB-Model-SoftDelete).
-- [Creating tables from structs](https://godoc.org/github.com/rustjason/pg/pg#example-DB-CreateTable).
-- [Pagination](https://godoc.org/github.com/rustjason/pg/pg/orm#Pagination) and [URL filters](https://godoc.org/github.com/rustjason/pg/pg/orm#URLFilters) helpers.
-- [ForEach](https://godoc.org/github.com/rustjason/pg/pg#example-DB-Model-ForEach) that calls a function for each row returned by the query without loading all rows into the memory.
+- Working with models using [ORM](https://godoc.org/github.com/rustjason/pg#example-DB-Model) and [SQL](https://godoc.org/github.com/rustjason/pg#example-DB-Query).
+- Scanning variables using [ORM](https://godoc.org/github.com/rustjason/pg#example-DB-Select-SomeColumnsIntoVars) and [SQL](https://godoc.org/github.com/rustjason/pg#example-Scan).
+- [SelectOrInsert](https://godoc.org/github.com/rustjason/pg#example-DB-Insert-SelectOrInsert) using on-conflict.
+- [INSERT ... ON CONFLICT DO UPDATE](https://godoc.org/github.com/rustjason/pg#example-DB-Insert-OnConflictDoUpdate) using ORM.
+- Bulk/batch [inserts](https://godoc.org/github.com/rustjason/pg#example-DB-Insert-BulkInsert), [updates](https://godoc.org/github.com/rustjason/pg#example-DB-Update-BulkUpdate), and [deletes](https://godoc.org/github.com/rustjason/pg#example-DB-Delete-BulkDelete).
+- Common table expressions using [WITH](https://godoc.org/github.com/rustjason/pg#example-DB-Select-With) and [WrapWith](https://godoc.org/github.com/rustjason/pg#example-DB-Select-WrapWith).
+- [CountEstimate](https://godoc.org/github.com/rustjason/pg#example-DB-Model-CountEstimate) using `EXPLAIN` to get [estimated number of matching rows](https://wiki.postgresql.org/wiki/Count_estimate).
+- ORM supports [has one](https://godoc.org/github.com/rustjason/pg#example-DB-Model-HasOne), [belongs to](https://godoc.org/github.com/rustjason/pg#example-DB-Model-BelongsTo), [has many](https://godoc.org/github.com/rustjason/pg#example-DB-Model-HasMany), and [many to many](https://godoc.org/github.com/rustjason/pg#example-DB-Model-ManyToMany) with composite/multi-column primary keys.
+- [Soft deletes](https://godoc.org/github.com/rustjason/pg#example-DB-Model-SoftDelete).
+- [Creating tables from structs](https://godoc.org/github.com/rustjason/pg#example-DB-CreateTable).
+- [Pagination](https://godoc.org/github.com/rustjason/pg/orm#Pagination) and [URL filters](https://godoc.org/github.com/rustjason/pg/orm#URLFilters) helpers.
+- [ForEach](https://godoc.org/github.com/rustjason/pg#example-DB-Model-ForEach) that calls a function for each row returned by the query without loading all rows into the memory.
 - Works with PgBouncer in transaction pooling mode.
 - [Migrations](https://github.com/rustjason/pg/migrations).
 - [Sharding](https://github.com/rustjason/pg/sharding).
@@ -39,12 +39,12 @@
 ## Get Started
 
 ```shell
-go get -u github.com/rustjason/pg/pg
+go get -u github.com/rustjason/pg
 ```
 
-- [Wiki](https://github.com/rustjason/pg/pg/wiki)
-- [API docs](http://godoc.org/github.com/rustjason/pg/pg)
-- [Examples](http://godoc.org/github.com/rustjason/pg/pg#pkg-examples)
+- [Wiki](https://github.com/rustjason/pg/wiki)
+- [API docs](http://godoc.org/github.com/rustjason/pg)
+- [Examples](http://godoc.org/github.com/rustjason/pg#pkg-examples)
 
 ## Look & Feel
 
@@ -54,8 +54,8 @@ package pg_test
 import (
     "fmt"
 
-    "github.com/rustjason/pg/pg"
-    "github.com/rustjason/pg/pg/orm"
+    "github.com/rustjason/pg"
+    "github.com/rustjason/pg/orm"
 )
 
 type User struct {

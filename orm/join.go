@@ -4,7 +4,7 @@ import (
 	"reflect"
 
 	"github.com/rustjason/pg/internal"
-	"github.com/rustjason/pg/pg/types"
+	"github.com/rustjason/pg/types"
 )
 
 type join struct {

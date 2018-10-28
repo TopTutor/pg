@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rustjason/pg/pg/orm"
+	"github.com/rustjason/pg/orm"
 )
 
 type dummyDB struct {
@@ -102,7 +102,7 @@ func (db *DB) queryProcessed(
 	}
 }
 
-const packageName = "github.com/rustjason/pg/pg"
+const packageName = "github.com/rustjason/pg"
 
 func fileLine(depth int) (string, string, int) {
 	for i := depth; ; i++ {
