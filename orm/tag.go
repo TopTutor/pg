@@ -1,7 +1,7 @@
 package orm
 
 import (
-	"github.com/go-pg/pg/internal/parser"
+	"github.com/rustjason/pg/internal/parser"
 )
 
 type tag struct {

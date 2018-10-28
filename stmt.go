@@ -5,8 +5,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/go-pg/pg/internal"
-	"github.com/go-pg/pg/internal/pool"
+	"github.com/rustjason/pg/internal"
+	"github.com/rustjason/pg/internal/pool"
 	"github.com/go-pg/pg/orm"
 )
 

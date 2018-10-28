@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/go-pg/pg/internal/parser"
+	"github.com/rustjason/pg/internal/parser"
 	"github.com/go-pg/pg/types"
 )
 

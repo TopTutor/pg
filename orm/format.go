@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/go-pg/pg/internal"
-	"github.com/go-pg/pg/internal/parser"
+	"github.com/rustjason/pg/internal"
+	"github.com/rustjason/pg/internal/parser"
 	"github.com/go-pg/pg/types"
 )
 

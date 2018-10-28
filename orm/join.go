@@ -3,7 +3,7 @@ package orm
 import (
 	"reflect"
 
-	"github.com/go-pg/pg/internal"
+	"github.com/rustjason/pg/internal"
 	"github.com/go-pg/pg/types"
 )
 
