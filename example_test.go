@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/go-pg/pg"
-	"github.com/go-pg/pg/orm"
+	"github.com/toptutor/pg/orm"
 )
 
 var pgdb *pg.DB

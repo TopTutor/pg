@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/go-pg/pg/orm"
+	"github.com/toptutor/pg/orm"
 )
 
 type dummyDB struct {

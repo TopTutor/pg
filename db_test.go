@@ -10,7 +10,7 @@ import (
 	"time"
 
 	"github.com/go-pg/pg"
-	"github.com/go-pg/pg/orm"
+	"github.com/toptutor/pg/orm"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
