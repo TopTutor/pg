@@ -5,9 +5,9 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/toptutor/pg/internal"
-	"github.com/toptutor/pg/orm"
-	"github.com/toptutor/pg/types"
+	"github.com/go-pg/pg/internal"
+	"github.com/go-pg/pg/orm"
+	"github.com/go-pg/pg/types"
 )
 
 // Discard is used with Query and QueryOne to discard rows.

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/toptutor/pg/types"
+	"github.com/go-pg/pg/types"
 )
 
 type scanValuesModel struct {

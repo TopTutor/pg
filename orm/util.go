@@ -3,7 +3,7 @@ package orm
 import (
 	"reflect"
 
-	"github.com/toptutor/pg/types"
+	"github.com/go-pg/pg/types"
 )
 
 func indirect(v reflect.Value) reflect.Value {

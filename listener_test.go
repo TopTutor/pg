@@ -4,7 +4,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/toptutor/pg"
+	"github.com/go-pg/pg"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

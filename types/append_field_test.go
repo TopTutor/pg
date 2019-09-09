@@ -3,7 +3,7 @@ package types_test
 import (
 	"testing"
 
-	"github.com/toptutor/pg/types"
+	"github.com/go-pg/pg/types"
 )
 
 var appendFieldTests = []struct {

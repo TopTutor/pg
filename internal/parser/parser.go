@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/toptutor/pg/internal"
+	"github.com/go-pg/pg/internal"
 )
 
 type Parser struct {

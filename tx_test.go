@@ -3,7 +3,7 @@ package pg_test
 import (
 	"strings"
 
-	"github.com/toptutor/pg"
+	"github.com/go-pg/pg"
 
 	. "gopkg.in/check.v1"
 )

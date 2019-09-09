@@ -3,7 +3,7 @@ package internal_test
 import (
 	"testing"
 
-	"github.com/toptutor/pg/internal"
+	"github.com/go-pg/pg/internal"
 )
 
 func TestUnderscore(t *testing.T) {

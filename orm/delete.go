@@ -1,7 +1,7 @@
 package orm
 
 import (
-	"github.com/toptutor/pg/internal"
+	"github.com/go-pg/pg/internal"
 )
 
 func Delete(db DB, model interface{}) error {

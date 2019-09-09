@@ -3,7 +3,7 @@ package parser_test
 import (
 	"testing"
 
-	"github.com/toptutor/pg/internal/parser"
+	"github.com/go-pg/pg/internal/parser"
 )
 
 var hstoreTests = []struct {

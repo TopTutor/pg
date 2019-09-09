@@ -1,7 +1,7 @@
 package orm
 
 import (
-	"github.com/toptutor/pg/internal/parser"
+	"github.com/go-pg/pg/internal/parser"
 )
 
 type tag struct {

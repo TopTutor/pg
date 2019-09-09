@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/toptutor/pg/internal"
-	"github.com/toptutor/pg/types"
+	"github.com/go-pg/pg/internal"
+	"github.com/go-pg/pg/types"
 )
 
 const (

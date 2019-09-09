@@ -3,7 +3,7 @@ package orm
 import (
 	"fmt"
 
-	"github.com/toptutor/pg/types"
+	"github.com/go-pg/pg/types"
 )
 
 const (

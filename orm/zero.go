@@ -4,7 +4,7 @@ import (
 	"database/sql/driver"
 	"reflect"
 
-	"github.com/toptutor/pg/types"
+	"github.com/go-pg/pg/types"
 )
 
 var driverValuerType = reflect.TypeOf((*driver.Valuer)(nil)).Elem()

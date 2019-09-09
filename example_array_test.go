@@ -3,7 +3,7 @@ package pg_test
 import (
 	"fmt"
 
-	"github.com/toptutor/pg"
+	"github.com/go-pg/pg"
 )
 
 func ExampleDB_Model_postgresArrayStructTag() {

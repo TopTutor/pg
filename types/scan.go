@@ -8,7 +8,7 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/toptutor/pg/internal"
+	"github.com/go-pg/pg/internal"
 )
 
 func Scan(v interface{}, b []byte) error {

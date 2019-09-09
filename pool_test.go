@@ -3,7 +3,7 @@ package pg_test
 import (
 	"time"
 
-	"github.com/toptutor/pg"
+	"github.com/go-pg/pg"
 
 	. "gopkg.in/check.v1"
 )
